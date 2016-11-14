@@ -95,21 +95,160 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html { 
+  box-sizing: border-box;
+}
 
+*, *:before, *:after { 
+  box-sizing: inherit; 
+}
 
+body {
+}
 
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
 
+header, .container { 
+  position: relative; 
+}
 
+.page-header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+}
 
+.page-header h1 { 
+  margin: 0;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
 
+}
+.page-header i {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  text-decoration: none;
+  color: #fff;
+}
 
+.about { 
+  margin: 1em 0; 
+}
 
+.about h2{ 
+  text-transform: uppercase;
+  margin: 1em; 
+}
 
+.about p{ 
+  margin: 1.5em; 
+}
 
+.about, .grid { 
+  border-bottom: 1px solid #ccc; 
+}
 
+.grid {
+  width: 50%;
+  float: left;
+  overflow: auto;
+  position: relative;
+  padding-bottom: 2em;
+}
 
+.grid h2{ 
+  text-transform: uppercase;
+  margin: 1em; 
+}
 
+.main {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.mainbg {
+  display: block;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+}
+
+.feature {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  line-height: 1em;
+  height: 50%;
+}
+
+.feature h3 a {
+  padding: .75em 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.feature h3 a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.project {
+  max-width: 28.5em;
+  float: left;
+  border: 1px solid #fff;
+}
+
+.container a .project-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+  font: bold 1.5rem/1.4rem Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.container a:hover .project-title {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.project-title h4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
